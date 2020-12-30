@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_main_background">#C2C6BD</color>
+    <color name="color_main_toolbar">#FFFFFF</color>
+    <color name="color_main_pony">#959191</color>
+    <color name="color_main_recycler">#ECECEC</color>
+    <color name="color_main_recycler2">#D8D4D4</color>
+
+
+
+
+    <color name="color_text_default">#3F51B5</color>
+    <color name="color_green_default">#4CAF50</color>
+    <color name="color_orange_default">#FF9800</color>
+    <color name="color_blue_default">#3F51B5</color>
+    <color name="color_blue_default2">#2196F3</color>
+    <color name="color_green_default2">#39988F</color>
+    <color name="color_date_time">#AF4139</color>
+    <color name="color_blue_sms">#2196F3</color>
+    <color name="color_delivery_wait">#2196F3</color>
+    <color name="color_red_default">#FF0000</color>
+    <color name="color_purple_place">#673AB7</color>
+    <color name="color_green_sms">#009688</color>
+    <color name="color_brown_signature">#884E05</color>
+    <color name="color_green_default3">#4CAF50</color>
+</resources>

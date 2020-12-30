@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardMaxElevation="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/color_main_recycler"
+        >
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/ponylogo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                />
+
+            <!-- 일시 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일시:"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/text_evnet_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-12-16"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"
+
+                    android:textColor="@color/color_date_time"
+                    />
+                <TextView
+                    android:id="@+id/text_evnet_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:30:00"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"
+
+                    android:textColor="@color/color_date_time"
+                    />
+
+            </LinearLayout> <!-- 일시 -->
+
+            <!-- 장소 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="장소:"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/text_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제주 신라호텔"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#673AB7"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인원:"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/text_user_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300명"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout> <!-- 장소 -->
+
+            <!-- 고객 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고객: "
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/text_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="김태희"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout> <!-- 고객 -->
+
+            <!-- 연락처 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="연락처: "
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/text_mdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="010-1122-1578"
+                    android:textSize="15sp"
+
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout> <!-- 연락처 -->
+
+
+            <!-- 배차 현황 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배차: "
+                    android:textColor="@color/color_text_default"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_recycle_fix_delivery1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_recycle_fix_delivery2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_recycle_fix_delivery3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_recycle_fix_delivery4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_recycle_fix_delivery5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_recycle_total_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_green_default2"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 배차 sms 상태 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배차 SMS: "
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/color_green_sms"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_send_sms1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sms_dont_send"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_red_default"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_send_sms_sign_datetime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@정완 2020-12-19 20:33"
+                    android:textSize="11sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_blue_sms"
+                    />
+
+
+            </LinearLayout> <!-- 배차 sms 상태 -->
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

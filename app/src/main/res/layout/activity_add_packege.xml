@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_main_background"
+    tools:context=".ActivityAddPackege"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="패키지 추가"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="패키지 이름: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/et_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="트레킹 3박 4일"
+            />
+
+    </LinearLayout> <!-- 이름 -->
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="당일" />
+
+        <RadioButton
+            android:id="@+id/rb_one_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/color_green_default"
+            android:textSize="13dp"
+            android:text="1박2일" />
+
+        <RadioButton
+            android:id="@+id/rb_two_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/color_blue_sms"
+            android:text="2박3일" />
+
+        <RadioButton
+            android:id="@+id/rb_three_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_orange_default"
+            android:textSize="13dp"
+            android:text="3박4일" />
+
+        <RadioButton
+            android:id="@+id/rb_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_purple_place"
+            android:textSize="13dp"
+            android:text="기타" />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="패키지 내용 "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout> <!-- 이름 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <EditText
+            android:id="@+id/et_package_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="제주 공항 출발"
+            />
+
+
+    </LinearLayout> <!-- 이름 -->
+
+
+
+
+    <!-- 저장 확인 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_add_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout> <!-- 저장 확인 버튼 -->
+
+
+</LinearLayout>

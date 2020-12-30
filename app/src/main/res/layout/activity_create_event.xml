@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_main_background"
+    tools:context=".ActivityCreateEvent"
+    >
+
+    <!-- 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        >
+
+
+
+    </LinearLayout> <!-- 행사현황 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="행사현황"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/et_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:hint="제주시 모임"
+            />
+
+    </LinearLayout> <!-- 제목 -->
+
+    <!-- 일시 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일시: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/color_date_time"
+            android:textSize="18sp"
+            android:hint="날짜버튼"
+            />
+
+        <TextView
+            android:id="@+id/txt_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/color_date_time"
+            android:textSize="18sp"
+            android:hint="시간버튼"
+            />
+
+        <Button
+            android:id="@+id/btn_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="날짜"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:onClick="SetEventDate"
+            />
+        <Button
+            android:id="@+id/btn_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="시간"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:onClick="SetEventTime"
+            />
+
+
+    </LinearLayout> <!-- 일시 -->
+
+    <!-- 장소 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장소: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_event_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/color_purple_place"
+            android:textSize="18sp"
+            android:hint="제주시"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/et_user_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:hint="300명"
+            android:layout_weight="0.1"
+            />
+
+
+
+    </LinearLayout> <!-- 장소 -->
+
+
+    <!-- 고객, 연락처 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객:"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="홍길동"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처:"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+        <EditText
+            android:id="@+id/txt_mdn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="010-2222-1212"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout> <!-- 고객, 연락처 -->
+
+
+
+
+
+    <!-- 이벤트 내용 -->
+    <EditText
+        android:id="@+id/et_event_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:hint="세부사항 적어주세요."
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_weight="1"
+        />
+
+
+    <!-- 저장 확인 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <Button
+            android:id="@+id/btn_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:onClick="just_Cencel"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="행사추가"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:onClick="InsertEvent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout> <!-- 저장 확인 버튼 -->
+
+</LinearLayout>

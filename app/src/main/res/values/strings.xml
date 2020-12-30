@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PonyExpressManager</string>
+    <string name="title">PonyExpress</string>
+    <string name="title_admin">PonyExpress Admin</string>
+    <string name="sms_dont_send">미발송!!</string>
+    <string name="sms_sent">발송 완료</string>
+    <string name="can_use_plan">배차가능</string>
+    <string name="duplication_plan">중복확인</string>
+    <string name="aws_domain">13.125.254.145</string>
+</resources>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_background"
+    android:orientation="vertical"
+    tools:context=".ActivityEventDetailDay"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/txt_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-12-25 행사현황"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="행사개수: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_event_count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout><!-- 행사현황 -->
+
+            <!-- 배차현황 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-배차현황-"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+
+            </LinearLayout><!-- 배차현황 -->
+
+            <!-- 문자발송/행사-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문자발송/행사: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_send_sms_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_event_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/3"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+
+            </LinearLayout> <!-- 문자발송/행사-->
+
+            <!-- 텍스트 영역 배차리스트 -->
+            <LinearLayout
+                android:id="@+id/text_view_area1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout><!-- 텍스트 영역 배차리스트 1.1 - 4.2 -->
+
+            <!-- 텍스트 영역 배차리스트 -->
+            <LinearLayout
+                android:id="@+id/text_view_area5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area6_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area6_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area7_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area7_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area8_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area8_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout><!-- 텍스트 영역 배차리스트 5.1 - 8.2 -->
+
+            <!-- 텍스트 영역 배차리스트 -->
+            <LinearLayout
+                android:id="@+id/text_view_area9_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area9_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area10_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area10_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area11_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area11_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area12_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area12_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout><!-- 텍스트 영역 배차리스트 9.1 - 12.2 -->
+
+            <!-- 텍스트 영역 배차리스트 -->
+            <LinearLayout
+                android:id="@+id/text_view_area13_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area13_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area14_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area14_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area15_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area15_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area16_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area16_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout><!-- 텍스트 영역 배차리스트 13.1 - 16.2 -->
+
+            <!-- 텍스트 영역 배차리스트 -->
+            <LinearLayout
+                android:id="@+id/text_view_area17_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area17_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area18_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area18_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area19_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area19_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/text_view_area20_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_view_area20_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout><!-- 텍스트 영역 배차리스트 13.1 - 16.2 -->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- 저장 확인 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        >
+
+        <Button
+            android:id="@+id/btn_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:backgroundTint="@color/color_main_pony"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            />
+    </LinearLayout> <!-- 저장 확인 버튼 -->
+
+</LinearLayout>
