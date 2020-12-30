@@ -68,6 +68,17 @@ class ActivityListFoodMenu : AppCompatActivity(), CheckInterface
             }
             else
             {
+                for( i in 0 until m_list.size)
+                {
+                    for(inx in 0 until list_food_menu.size)
+                    {
+                        if(m_list[i].id == list_food_menu[inx].id)
+                        {
+                            list_food_menu.removeAt(inx)
+                        }
+                    }
+                }
+
                 //이벤트 전부 확인해서 해당 패키지를 사용하고 있으면 지운다.
                 for( i in 0 until  m_list.size)
                 {

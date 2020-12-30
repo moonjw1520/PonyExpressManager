@@ -59,6 +59,9 @@ class ActivityAddPackege : AppCompatActivity() {
             InsertPackage(it)
         }
 
+        btn_cancel_package.setOnClickListener {
+            finish()
+        }
 
     }
 
