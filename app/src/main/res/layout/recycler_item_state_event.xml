@@ -130,6 +130,15 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/text_view_area1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/text_view_area2_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -140,6 +149,14 @@
 
         <LinearLayout
             android:id="@+id/text_view_area2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_view_area2_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -164,6 +181,14 @@
             >
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/text_view_area3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/text_view_area4_1"
@@ -176,6 +201,14 @@
 
         <LinearLayout
             android:id="@+id/text_view_area4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout><!-- 텍스트 영역 배차리스트 -->
+
+        <LinearLayout
+            android:id="@+id/text_view_area4_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

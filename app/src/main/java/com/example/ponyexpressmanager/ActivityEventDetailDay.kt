@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import com.example.ponyexpressmanager.CListCollector.list_event
 import kotlinx.android.synthetic.main.activity_event_detail.*
 import kotlinx.android.synthetic.main.activity_event_detail.txt_event_date
 import kotlinx.android.synthetic.main.recycler_item_state_event.*
@@ -36,49 +37,69 @@ class ActivityEventDetailDay : AppCompatActivity() {
         mListView.clear()
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area1_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area1_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area1_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area2_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area2_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area2_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area3_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area3_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area3_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area4_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area4_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area4_3))
 
 
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area5_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area5_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area5_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area6_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area6_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area6_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area7_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area7_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area7_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area8_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area8_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area8_3))
 
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area9_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area9_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area9_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area10_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area10_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area10_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area11_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area11_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area11_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area12_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area12_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area12_3))
 
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area13_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area13_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area13_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area14_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area14_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area14_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area15_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area15_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area15_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area16_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area16_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area16_3))
 
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area17_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area17_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area17_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area18_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area18_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area18_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area19_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area19_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area19_3))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area20_1))
         mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area20_2))
+        mListView.add(this.findViewById<LinearLayout>(R.id.text_view_area20_3))
 
 
     }
@@ -162,6 +183,38 @@ class ActivityEventDetailDay : AppCompatActivity() {
                     view.addView(txtView_sms_state)
                 }
 
+
+                var view2 = mListView[countview+1]
+                view2.removeAllViews()
+
+
+                var txtView_packet_str = TextView(applicationContext)
+                txtView_packet_str.text = ""
+                txtView_packet_str.text = "패키지: "
+                txtView_packet_str.setTextColor(ContextCompat.getColor(applicationContext,R.color.color_orange_default))
+                view2.addView(txtView_packet_str)
+
+
+                var tmpStr =""
+                for(inx in 0 until  list_event[i].List_Menu.size)
+                {
+                    if(inx == 0) {
+                        tmpStr = list_event[i].List_Menu[inx].name
+                    }
+                    else
+                    {
+                        tmpStr = tmpStr + ", " + list_event[i].List_Menu[inx].name
+                    }
+                }
+
+                //tmpStr = tmpStr + " ${list_event[i].List_Menu.size}개"
+
+                var txtView_packet = TextView(applicationContext)
+                txtView_packet.setTextColor(ContextCompat.getColor(applicationContext,R.color.black))
+                txtView_packet.text= tmpStr
+                view2.addView(txtView_packet)
+
+
                 //배차
                 var txtView_delivery = TextView(applicationContext)
                 txtView_delivery.setTextSize(15.0f)
@@ -169,9 +222,9 @@ class ActivityEventDetailDay : AppCompatActivity() {
                 txtView_delivery.setText("배차: ")
                 txtView_delivery.setTextColor(ContextCompat.getColor(applicationContext,R.color.color_text_default))
 
-                var view2 = mListView[countview+1]
-                view2.removeAllViews()
-                view2.addView(txtView_delivery)
+                var view3 = mListView[countview+2]
+                view3.removeAllViews()
+                view3.addView(txtView_delivery)
 
                 var txtView_deliveryman_list = TextView(applicationContext)
                 txtView_deliveryman_list.setTextSize(15.0f)
@@ -195,9 +248,9 @@ class ActivityEventDetailDay : AppCompatActivity() {
                 txtView_deliveryman_list.text = txtView_deliveryman_list.text.toString() +" ${CListCollector.list_event[i].List_delivery_man.size}명"
 
                 txtView_deliveryman_list.setTextColor(ContextCompat.getColor(applicationContext,R.color.black))
-                view2.addView(txtView_deliveryman_list)
+                view3.addView(txtView_deliveryman_list)
 
-                countview += 2
+                countview += 3
             }
 
         }// list_event

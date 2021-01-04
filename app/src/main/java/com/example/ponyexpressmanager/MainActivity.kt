@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val keyHash = Utility.getKeyHash(this)
-        Log.d("Hash", keyHash)
+        Log.d("로그", keyHash)
 
 
         UserApiClient.instance.accessTokenInfo { tokenInfo, error ->

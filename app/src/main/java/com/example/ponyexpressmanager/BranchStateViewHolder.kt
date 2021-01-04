@@ -105,14 +105,47 @@ class BranchStateViewHolder(itemView : View, aStateRecyclerviewInterface : State
                     m_list_view[countview].addView(txtView_sms_state)
                 }
 
+                var view2 = m_list_view[countview+1]
+                view2.removeAllViews()
+
+
+                var txtView_packet_str = TextView(itemView.context)
+                txtView_packet_str.text = ""
+                txtView_packet_str.text = "패키지: "
+                txtView_packet_str.setTextColor(ContextCompat.getColor(itemView.context,R.color.color_orange_default))
+                view2.addView(txtView_packet_str)
+
+
+                var tmpStr =""
+                for(inx in 0 until  list_event[i].List_Menu.size)
+                {
+                    if(inx == 0) {
+                        tmpStr = list_event[i].List_Menu[inx].name
+                    }
+                    else
+                    {
+                        tmpStr = tmpStr + ", " + list_event[i].List_Menu[inx].name
+                    }
+                }
+
+                //tmpStr = tmpStr + " ${list_event[i].List_Menu.size}개"
+
+                var txtView_packet = TextView(itemView.context)
+                txtView_packet.setTextColor(ContextCompat.getColor(itemView.context,R.color.black))
+                txtView_packet.text= tmpStr
+                view2.addView(txtView_packet)
+
+
+
+
                 //배차
                 var txtView_delivery = TextView(itemView.context)
                 txtView_delivery.setText("")
                 txtView_delivery.setText("배차: ")
                 txtView_delivery.setTextColor(ContextCompat.getColor(itemView.context,R.color.color_text_default))
-                var view2 = m_list_view[countview+1]
-                view2.removeAllViews()
-                view2.addView(txtView_delivery)
+                var view3 = m_list_view[countview+2]
+                view3.removeAllViews()
+                view3.addView(txtView_delivery)
 
 
                 var txtView_deliveryman_list = TextView(itemView.context)
@@ -134,7 +167,7 @@ class BranchStateViewHolder(itemView : View, aStateRecyclerviewInterface : State
                 }
                 txtView_deliveryman_list.setText(txtView_deliveryman_list.text.toString()+ " ${list_event[i].List_delivery_man.size}명")
                 txtView_deliveryman_list.setTextColor(ContextCompat.getColor(itemView.context,R.color.black))
-                view2.addView(txtView_deliveryman_list)
+                view3.addView(txtView_deliveryman_list)
 
                 //배달기사 총계
 //                var txtView_deliveryman_count = TextView(itemView.context)
@@ -143,7 +176,7 @@ class BranchStateViewHolder(itemView : View, aStateRecyclerviewInterface : State
 //                txtView_deliveryman_count.setTextColor(ContextCompat.getColor(itemView.context,R.color.black))
 //                //m_list_view[countview+1].addView(txtView_deliveryman_count)
 //                view2.addView(txtView_deliveryman_count)
-                countview += 2
+                countview += 3
             }
 
         }// list_event
@@ -185,12 +218,16 @@ class BranchStateViewHolder(itemView : View, aStateRecyclerviewInterface : State
         m_list_view.clear()
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area1_1))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area1_2))
+        m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area1_3))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area2_1))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area2_2))
+        m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area2_3))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area3_1))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area3_2))
+        m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area3_3))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area4_1))
         m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area4_2))
+        m_list_view.add(itemView.findViewById<LinearLayout>(R.id.text_view_area4_3))
 
         //m_list_view.add(itemView.findViewById<LinearLayout>())
     }
